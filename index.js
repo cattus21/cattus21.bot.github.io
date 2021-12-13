@@ -10,7 +10,7 @@ const bot = new Telegraf(token);
 
 const data = {
   "😡": [
-    "https://github.com/cattus21/cattus21.bot.github.io/images/blob/main/images/angry.cat1.jpg?raw=true",
+    "https://github.com/cattus21/cattus21.bot.github.io/blob/main/images/angry.cat1.jpg?raw=true",
 
     "https://github.com/cattus21/cattus21.bot.github.io/blob/main/images/angry.cat2.jpg?raw=true",
   ],
@@ -52,22 +52,26 @@ const emojiKeyboard = emotions.reduce(
 
 const emojiTriggers = new RegExp(emotions.join("|"));
 
-bot.hears(emojiTriggers, async (ctx) => {
-  const cats_for_emoji = data[ctx.message.text];
-  const random_cat_url =
-    cats_for_emoji[Math.floor(Math.random() * cats_for_emoji.length)];
+try {
+  bot.hears(emojiTriggers, async (ctx) => {
+    const cats_for_emoji = data[ctx.message.text];
+    const random_cat_url =
+      cats_for_emoji[Math.floor(Math.random() * cats_for_emoji.length)];
 
-  await ctx.reply("Якщо " + ctx.message.text + ", то: ");
+    await ctx.reply("Якщо " + ctx.message.text + ", то: ");
 
-  await ctx.replyWithPhoto(random_cat_url);
-});
+    return await ctx.replyWithPhoto(random_cat_url);
+  });
 
-bot.on("message", async (ctx) => {
-  await ctx.reply(
-    "Обери емоцію:",
-    Markup.keyboard(["😡", "😭", "👍", "❤️", "⭐", "😂"]).resize()
-  );
-});
+  bot.on("message", async (ctx) => {
+    return await ctx.reply(
+      "Обери емоцію:",
+      Markup.keyboard(["😡", "😭", "👍", "❤️", "⭐", "😂"]).resize()
+    );
+  });
+} catch (error) {
+  console.log(error);
+}
 
 // footer
 bot.launch();
