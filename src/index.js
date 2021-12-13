@@ -10,35 +10,35 @@ const bot = new Telegraf(token);
 
 const data = {
   "😡": [
-    "https://github.com/cattus21/cattus21.bot.github.io/images/blob/main/angry.cat1.jpg?raw=true",
+    "https://github.com/cattus21/cattus21.bot.github.io/images/blob/main/images/angry.cat1.jpg?raw=true",
 
-    "https://github.com/cattus21/cattus21.bot.github.io/images/blob/main/angry.cat2.jpg?raw=true",
+    "https://github.com/cattus21/cattus21.bot.github.io/blob/main/images/angry.cat2.jpg?raw=true",
   ],
 
   "😭": [
-    "https://github.com/cattus21/cattus21.bot.github.io/images/blob/main/sad.cat.jpg?raw=true",
+    "https://github.com/cattus21/cattus21.bot.github.io/blob/main/images/sad.cat.jpg?raw=true",
 
-    "https://github.com/cattus21/cattus21.bot.github.io/images/blob/main/sad.cat1.jpg?raw=true",
+    "https://github.com/cattus21/cattus21.bot.github.io/blob/main/images/sad.cat1.jpg?raw=true",
   ],
 
   "👍": [
-    "https://github.com/cattus21/cattus21.bot.github.io/images/blob/main/ok.jpg?raw=true",
-    "https://github.com/cattus21/cattus21.bot.github.io/images/blob/main/ok1.jpg?raw=true",
+    "https://github.com/cattus21/cattus21.bot.github.io/blob/main/images/ok.jpg?raw=true",
+    "https://github.com/cattus21/cattus21.bot.github.io/blob/main/images/ok1.jpg?raw=true",
   ],
 
   "❤️": [
-    "https://github.com/cattus21/cattus21.bot.github.io/images/blob/main/love.jpg?raw=true",
-    "https://github.com/cattus21/cattus21.bot.github.io/images/blob/main/love2.jpg?raw=true",
+    "https://github.com/cattus21/cattus21.bot.github.io/blob/main/images/love.jpg?raw=true",
+    "https://github.com/cattus21/cattus21.bot.github.io/blob/main/images/love2.jpg?raw=true",
   ],
 
   "⭐": [
-    "https://github.com/cattus21/cattus21.bot.github.io/images/blob/main/star.jpg?raw=true",
-    "https://github.com/cattus21/cattus21.bot.github.io/images/blob/main/star1.jpg?raw=true",
+    "https://github.com/cattus21/cattus21.bot.github.io/blob/main/images/star.jpg?raw=true",
+    "https://github.com/cattus21/cattus21.bot.github.io/blob/main/images/star1.jpg?raw=true",
   ],
 
   "😂": [
-    "https://github.com/cattus21/cattus21.bot.github.io/images/blob/main/hehe.jpg?raw=true",
-    "https://github.com/cattus21/cattus21.bot.github.io/images/blob/main/hehe1.jpg?raw=true",
+    "https://github.com/cattus21/cattus21.bot.github.io/blob/main/images/hehe.jpg?raw=true",
+    "https://github.com/cattus21/cattus21.bot.github.io/blob/main/images/hehe1.jpg?raw=true",
   ],
 };
 
